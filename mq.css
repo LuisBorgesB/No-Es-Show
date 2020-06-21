@@ -1,0 +1,79 @@
+@media (min-width: 481px) and (max-width: 767px) {
+    #waveOndaSonido{
+        height: 170px;
+    }
+    #contenedorContador{
+        position: relative;
+        width: 70%;
+        height: 80px;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    #waveOndaSonido{
+        height: 250px;
+    }
+    #contenedorContador{
+        position: relative;
+        width: 60%;
+        height: 80px;
+        display: flex;
+        justify-content: space-around;
+    }
+    /*  */
+    #exteriorFotoPDan, #exteriorFotoPMax{
+        position: absolute;
+        top: calc(50% - (16em/2));
+        left: calc(25% - (16em/2));
+        width: 16em;
+        height: 16em;
+        border-radius: 50%;
+    }
+    #daniel p, #maximo p{
+        position: absolute;
+        left: calc(75% - (50%/2));
+        top: calc(50% - (6em/2));
+        width: 40%;
+        height: 6em;
+        text-align: justify;
+        text-indent: 1em;
+    }
+}
+@media (min-width: 1025px) {
+    #sobreNosotros{
+        position: relative;
+        top: 50px;
+        width: 100vw;
+        height: 30em;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--color_2);
+    }
+    #waveOndaSonido{
+        display: none;
+    }
+    #daniel, #maximo{
+        position: absolute;
+        width: 50%;
+        height: 100%;
+    }
+    #maximo{
+        right: 0;
+    }
+    #daniel p, #maximo p{
+        width: 70%;
+        left: calc(50% - (70%/2));
+    }
+    /*  */
+    #contenedorContador{
+        width: 45%;
+    }
+    /*  */
+    #bienvenida p{
+        width: 50%;
+        text-align: left;
+        text-indent: 1em;
+        font-size: 1.2em;
+    }
+}

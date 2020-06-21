@@ -1,0 +1,292 @@
+/* IMPORT Y VARIABLES */
+:root{
+    --color_1: #34a4dc;
+    --color_2: #ffffff;
+}
+/* CUERPO */
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    background-color: var(--color_1);
+}
+/*  */
+#contenedorIconBotonMO{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 50px;
+    background-color: #ffffff;
+    z-index: 20;
+    overflow: hidden;
+}
+#logoMini, #logoMiniMO{
+    position: absolute;
+    left: 0;
+    width: 250px;
+    height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+#logoMini{
+    background-image: url(recursos/logoMinimo.svg);
+}
+#logoMiniMO{
+    background-image: url(recursos/logoMinimoMO.svg);
+}
+#iconBotonMO{
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    cursor: pointer;
+    z-index: 100;
+}
+.iconMoon{
+    background-image: url(recursos/moon.svg);
+}
+.iconSun{
+    background-image: url(recursos/sun.svg);
+}
+/* encabezado */
+#encabezado{
+    position: relative;
+    top: 50px;
+    width: 100vw;
+    height: 200px;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 3em;
+    border-bottom-right-radius: 3em;
+    z-index: 10;
+    background-color: var(--color_2);
+}
+#logo{
+    position: absolute;
+    width: 210px;
+    height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    animation: aniLogo 1s alternate infinite;
+}
+@keyframes aniLogo{
+    100%{
+        transform: scale(1.1);
+    }
+}
+.logoMO{
+    background-image: url(recursos/logo_MO.svg);
+}
+.logoMC{
+    background-image: url(recursos/logo.svg);
+}
+/* SECCION BIENVENIDA */
+#bienvenida{
+    position: relative;
+    top: 50px;
+    width: 100vw;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+#bienvenida p{
+    width: 90%;
+    text-align: center;
+    text-indent: 1em;
+    font-size: 1.2em;
+}
+#youtube{
+    width: 70px;
+    padding-top: 1em;
+    cursor: pointer;
+}
+/* SECCION SOBRE NOSOTROS */
+#sobreNosotros{
+    position: relative;
+    top: 50px;
+    width: 100vw;
+    height: 65em;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color_2);
+}
+#daniel, #maximo{
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+#waveOndaSonido{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-image: url(recursos/OndaSonido.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#exteriorFotoPDan, #exteriorFotoPMax{
+    position: absolute;
+    top: 3em;
+    left: calc(50% - (16em/2));
+    width: 16em;
+    height: 16em;
+    border-radius: 50%;
+}
+#fotoPDan, #fotoPMax{
+    position: absolute;
+    top: 0;
+    left: calc(50% - (12em/2));
+    width: 12em;
+    height: 12em;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150%;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+
+}
+#fotoPDan{
+    background-image: url(recursos/FotoDaniel.jpg);
+}
+#fotoPMax{
+    background-image: url(recursos/FotoMax.jpg);
+    background-size: 110%;
+}
+.RSP{
+    position: absolute;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.RSPFace{
+    bottom: 25px;
+    left: calc(25% - (2.5em/2));
+    background-image: url(recursos/facebook.svg);
+    background-size: 50%;
+}
+.RSPInst{
+    bottom: 5px;
+    left: calc(50% - (2.5em/2));
+    background-image: url(recursos/instagram.svg);
+    background-size: 70%;
+}
+.RSPTwit{
+    bottom: 25px;
+    right: calc(25% - (2.5em/2));
+    background-image: url(recursos/twitter.svg);
+    background-size: 70%;
+}
+#daniel p, #maximo p{
+    position: absolute;
+    left: calc(50% - (90%/2));
+    bottom: 2em;
+    width: 90%;
+    text-align: justify;
+    text-indent: 1em;
+}
+/* contador */
+#contador{
+    position: relative;
+    top: 50px;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#contador h1{
+    position: relative;
+    color: #ffffff;
+}
+#contador h3{
+    position: relative;
+    color: #ffffff;
+}
+#contenedorContador{
+    position: relative;
+    width: 90%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+.contenedoresNum{
+    width: calc(100%/5);
+    height: 60%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedoresNum::before{
+    content: '';
+    bottom: 0;
+    position: absolute;
+    width: calc(100%/5);
+    height: 40%;
+    background-color: rgba(0, 0, 0, 0.13);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7em;
+    color: #ffffff;
+}
+#dias::before{
+    content: 'Dias';
+}
+#horas::before{
+    content: 'Horas';
+}
+#minutos::before{
+    content: 'Minutos';
+}
+#segundos::before{
+    content: 'Segundos';
+}
+/*  */
+#donar{
+    position: relative;
+    top: 50px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color_2);
+}
+#donar div{
+    width: 7em;
+    height: 2.5em;
+    background-color: var(--color_1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: .7em;
+    color: #ffffff;
+}
+
+#donar img{
+    width: 1.1em;
+    height: 1.1em;
+    padding-left: .5em;
+}
